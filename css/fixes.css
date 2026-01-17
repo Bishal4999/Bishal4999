@@ -1,0 +1,52 @@
+/* Fix for navbar height issue */
+#ftco-navbar {
+    height: auto !important;
+}
+
+.ftco-navbar-light {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background: transparent !important;
+}
+
+/* Ensure headers are centered as requested */
+h1.big-4+.underline {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fix navbar item heights */
+.navbar,
+.navbar-collapse,
+.navbar-nav,
+.nav-item {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+}
+
+.navbar-nav .nav-item {
+    width: auto !important;
+    margin-left: 15px;
+    /* Spacing */
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+    padding-top: 1.5rem !important;
+    /* Standard Bootstrap padding */
+    padding-bottom: 1.5rem !important;
+    height: auto !important;
+}
+
+.navbar-brand {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
